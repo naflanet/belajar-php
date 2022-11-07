@@ -1,11 +1,14 @@
+-- buat database fakultas
 CREATE DATABASE seal_fakultas;
 
+-- buat table jurusan
 CREATE TABLE jurusan (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     kode CHAR(4) NOT NULL,
     nama VARCHAR(50) NOT NULL
 );
 
+-- buat table mahasiswa
 CREATE TABLE mahasiswa (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     id_jurusan INTEGER NOT NULL,
