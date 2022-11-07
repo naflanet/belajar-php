@@ -17,3 +17,13 @@ CREATE TABLE mahasiswa (
     alamat VARCHAR(255) NOT NULL,
     FOREIGN KEY (id_jurusan) REFERENCES jurusan (id)
 );
+
+-- masukin data jurusan
+insert into jurusan (kode,nama) values ('APBL','Administrasi Publik');
+insert into jurusan (kode,nama) values ('AKTS','Akutansi');
+
+-- masukin data mahasiswa
+insert into mahasiswa (id_jurusan, nim, nama, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat)
+values (1,'20220001', 'Fulan', 'laki-laki', 'Malang', '2000-12-23', 'Jl. Sukarno Hatta');
+insert into mahasiswa (id_jurusan, nim, nama, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat)
+values (1,'20220001', 'Fulan', 'laki-laki', 'Malang', '2000-12-23', 'Jl. Sukarno Hatta');
