@@ -29,7 +29,7 @@ insert into jurusan (kode,nama) values ('AKTS','Akutansi');
 insert into mahasiswa (id_jurusan, nim, nama, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat)
 values (1,'20220001', 'Fulan', 'laki-laki', 'Malang', '2000-12-23', 'Jl. Sukarno Hatta');
 insert into mahasiswa (id_jurusan, nim, nama, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat)
-values (1,'20220001', 'Fulan', 'laki-laki', 'Malang', '2000-12-23', 'Jl. Sukarno Hatta');
+values (1,'20220002', 'Andi', 'laki-laki', 'Malang', '2000-12-23', 'Jl. Sukarno Hatta');
 
 -- update data mahasiswa
 update mahasiswa set alamat = "Jl. Candi Panggung 89" where id = 1;
