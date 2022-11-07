@@ -33,3 +33,6 @@ values (1,'20220001', 'Fulan', 'laki-laki', 'Malang', '2000-12-23', 'Jl. Sukarno
 
 -- update data mahasiswa
 update mahasiswa set alamat = "Jl. Candi Panggung 89" where id = 1;
+
+-- delete data mahasiswa
+delete from mahasiswa where id=2;
