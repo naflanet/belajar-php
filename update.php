@@ -79,6 +79,7 @@ if (isset($_POST['submit'])){
     <title>Update</title>
 </head>
 <body>
+    <?php if(isset($_GET['id'])): ?>
     <form action="" method="post">
         NIM: <input type="text" name="nim" value="<?php echo $nim; ?>"><br>
         Nama: <input type="text" name="nama" value="<?php echo $nama; ?>"><br>
@@ -89,5 +90,6 @@ if (isset($_POST['submit'])){
         Alamat: <input type="text" name="alamat" value="<?php echo $alamat; ?>"><br>
         <button type="submit" name="submit">Update Data</button>
     </form>
+    <?php endif; ?>
 </body>
 </html>
