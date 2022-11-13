@@ -12,14 +12,14 @@ if(isset($_GET['id'])){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
         exit();
     }else{
-        echo 'koneksi berhasil';
+        echo '<br>koneksi berhasil';
     }
 
     $sql = "SELECT * FROM mahasiswa WHERE id='$id'";
 
     if ($result = mysqli_query($con, $sql)) {
-        echo "data tersedia";
-        while($user_data = mysqli_fetch_array($result)) {
+        echo "<br>data tersedia";
+        while($user_data = mysqli_fetch_assoc($result)) {
             $nim = $user_data['nim'];
             $nama = $user_data['nama'];
             $id_jurusan = $user_data['id_jurusan'];
@@ -53,14 +53,14 @@ if (isset($_POST['submit'])){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
         exit();
     }else{
-        echo 'koneksi berhasil';
+        echo '<br>koneksi berhasil';
     }
 
     $sql = "UPDATE mahasiswa SET nim='$nim',nama='$nama',id_jurusan='$id_jurusan',tempat_lahir='$tpt_lahir',
     tanggal_lahir='$tgl_lahir',alamat='$alamat' WHERE id='$id' ";
 
     if (mysqli_query($con, $sql)) {
-        echo "Data berhasil diupdate";
+        echo "<br>Data berhasil diupdate";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
     }
