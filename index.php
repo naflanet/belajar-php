@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello World!";
+echo "Hello World";
 
 $nama = "Alfan";
 $usia = 15;
